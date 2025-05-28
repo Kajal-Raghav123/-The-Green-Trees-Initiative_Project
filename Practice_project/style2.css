@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.box1{
+    display:flex;
+    height: 14rem;
+    width: 14rem;
+    background-color: beige;
+    align-items: center;
+    justify-content: center;
+  
+}
+.box2{
+    background-color: blueviolet;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+}
+ p{
+    position: absolute;
+    top: 0;
+    left: 5rem;
+}
