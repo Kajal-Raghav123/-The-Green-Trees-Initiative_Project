@@ -358,4 +358,19 @@ body {
     text-align: end;
     padding: 2rem 0rem;
   }
+  /* Donation-Page */
+  header{
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+   align-items: center;
+  
+  padding: 1rem;
+  }
+  header a{
+ text-decoration: none;
+ font-size: 1.8rem;
+ width: 11rem;
+  }
+
 }
