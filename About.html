@@ -6,26 +6,28 @@
     <title>About us</title>
  
  
-       <link rel="stylesheet" href="/About styles/desktop.css" />
+       <!-- <link rel="stylesheet" href="/About styles/desktop.css" />
+       <link rel="stylesheet" href="/About styles/tablet.css" /> -->
+       <link rel="stylesheet" href="/About styles/mobile.css" />
   </head>
   <body>
     <!-- Header-section  -->
-    <header class="nav-container">
-      <nav class="navbar">
-        <div class="navbar-heading">
-          <a href="index.html">
-            <h1>The Green</h1>
-            <h1>Belt Movement</h1>
-          </a>
+    <header class="nav-header">
+
+      <!-- navbar-section -->
+      <nav class="navbar-section">
+        <div class="navbar-headings">
+          <div class="nav-title"><a href="">The Green Belt Initiative</a></div>
           <ul>
             <li><a href="/">About us</a></li>
             <li><a href="/">Get involved</a></li>
             <li><a href="/">News and events</a></li>
           </ul>
         </div>
-        <div class="btn"><button>Donate today</button></div>
+        <button onclick="location.href='./donation.html'">Donate today</button>
       </nav>
     </header>
+
     <main>
       <!-- section1 -->
       <section class="issue-section">
@@ -191,15 +193,25 @@
           <button>Subscribe</button>
         </div>
       </div>
-      <section class="Footer">
-        <div class="footer1">
-          <h2>The Green Belt Movement</h2>
+      
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <!-- footer-heading-section -->
+          <div class="footer-heading">
+            <h2>The Green Trees Initiative</h2>
+          </div>
+
+          <!-- list-1 -->
           <ul>
             <li>CONTACT US</li>
             <li class="contact">
               123 Anywhere St. Cityname, NY 11206 (123) 456-7890 contact@npo.org
             </li>
           </ul>
+
+          <!-- list-2 -->
           <ul>
             <li>FOLLOW US</li>
             <li><a href="">Facebook</a></li>
@@ -207,6 +219,8 @@
             <li><a href="">Twitter</a></li>
             <li><a href="">Mediums</a></li>
           </ul>
+
+          <!-- list-3 -->
           <ul>
             <li>LEARN MORE</li>
             <li><a href="">The issue</a></li>
@@ -214,9 +228,11 @@
             <li><a href="">Get involoved</a></li>
             <li><a href="">Latest news</a></li>
           </ul>
+
+          <!-- footer-note -->
+          <div class="footer-note"><h1>#STOP CLIMATE CHANGE</h1></div>
         </div>
-        <div class="footer2">#STOP CLIMATE CHANGE</div>
-      </section>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>

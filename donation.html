@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation</title>
+    <link rel="stylesheet" href="/About styles/mobile.css" />
+  </head>
+  <body>
+    <header class="donation-navbar">
+      <a href=""> The Green Trees Initiative</a>
+    </header>
+
+    <!-- form-section -->
+    <main class="form-section">
+      <div class="donation-heading">GIVE HOPE TO THOSE WHO NEEDS IT MOST</div>
+
+      <div class="form-container">
+        <form class="donation-form">
+          <!-- fieldset-section1 -->
+          <fieldset>
+            <legend>Your information</legend>
+
+            <!-- full-name -->
+            <div class="full-name">
+              <div class="first-name">
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="last-name">
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+
+            <!-- address-section -->
+            <div class="address-container">
+              <!-- address1 -->
+              <div class="street-address1 form-info">
+                <label for="street-address">STREET ADDRESS</label>
+                <input
+                  type="text"
+                  id="street-address"
+                  name="street-address"
+                  placeholder="Street address"
+                />
+              </div>
+
+              <!-- address2 -->
+              <div class="address2">
+                <div class="city-address">
+                  <label for="city-name">CITY</label>
+                  <input
+                    type="text"
+                    id="city-name"
+                    name="city"
+                    placeholder="City name"
+                  />
+                </div>
+                <div class="state-name">
+                  <label for="state-name">STATE</label>
+                  <select id="state-name" name="state">
+                    <option value="al">AL</option>
+                    <option value="bl">BL</option>
+                    <option value="cn">CN</option>
+                    <option value="ny">NY</option>
+                  </select>
+                </div>
+                <div class="zip-address">
+                  <label for="zip-code">ZIP CODE</label>
+                  <input
+                    type="text"
+                    id="zip-code"
+                    name="zip-code"
+                    placeholder="Zip code"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- email-address -->
+            <div class="email-container form-info">
+              <label for="email">EMAIL ADDRESS</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+              />
+            </div>
+          </fieldset>
+
+          <!-- fieldset-section2 -->
+          <fieldset>
+            <legend>Payment information</legend>
+
+            <!-- credit-card-section -->
+            <div class="credit-card-info form-info">
+              <label for="credit-card">CREDIT CARD NUMBER</label>
+              <input type="text" placeholder="Credit card number" />
+            </div>
+
+            <!-- Expiration-section -->
+            <div class="expiration-section">
+              <div class="expiration-date">
+                <label for="date">EXPIRATION DATE</label>
+                <div class="expiration-month-year">
+                  <input type="text" id="month" placeholder="MM" />
+                  <input type="text" id="date" placeholder="YYYY" />
+                </div>
+              </div>
+
+              <div class="security-code-container">
+                <label for="security-code">SECURITY CODE</label>
+                <input type="text" placeholder="CVV" />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- confirmation-note-section -->
+          <div class="confirmation-msg">
+            <p>
+              Click the button to confirm your donation of $10, recurring
+              monthly.
+            </p>
+          </div>
+
+          <!-- Payment-process and go back -section -->
+          <div class="payment-section">
+            <div class="payment-button"><button>Process Payment</button></div>
+            <div class="go-back-link"><a href="">Go back</a></div>
+          </div>
+        </form>
+      </div>
+    </main>
+     <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <!-- footer-heading-section -->
+          <div class="footer-heading">
+            <h2>The Green Trees Initiative</h2>
+          </div>
+
+          <!-- list-1 -->
+          <ul>
+            <li>CONTACT US</li>
+            <li class="contact">
+              123 Anywhere St. Cityname, NY 11206 (123) 456-7890 contact@npo.org
+            </li>
+          </ul>
+
+          <!-- list-2 -->
+          <ul>
+            <li>FOLLOW US</li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Mediums</a></li>
+          </ul>
+
+          <!-- list-3 -->
+          <ul>
+            <li>LEARN MORE</li>
+            <li><a href="">The issue</a></li>
+            <li><a href="">How we help</a></li>
+            <li><a href="">Get involoved</a></li>
+            <li><a href="">Latest news</a></li>
+          </ul>
+
+          <!-- footer-note -->
+          <div class="footer-note"><h1>#STOP CLIMATE CHANGE</h1></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
