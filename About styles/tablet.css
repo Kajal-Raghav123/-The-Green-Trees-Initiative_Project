@@ -1,59 +1,503 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-/* About Page */
-@media (min-width: 768px) {
-  .nav-container {
+@media (min-width: 768px) and (max-width: 1023px) {
+  * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
-  .navbar {
+  .nav-header {
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+  }
+  .navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .navbar-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  .ul-list {
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding:  0rem 2rem;
-  
+    justify-content: space-evenly;
+    list-style: none;
   }
 
-  .navbar-heading {
+  .navbar-section ul a {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-title a {
+    font-size: 1.38rem;
+    font-weight: 600;
+    color: rgb(53, 68, 99);
+  }
+  .navbar-section button {
+    background-color: #c0e7c7;
+    padding: 0.3rem 2.5rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  /* Home-Page */
+
+  /* issue-section */
+  .issue-container {
+    background-color: rgb(53, 68, 99);
+    height: auto;
+    width: auto;
+    background-image: url(/images/annie-spratt-tablet-unsplash@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .issue-msg-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    color: white;
+  }
+  .stop-heading {
+    font-size: 2rem;
+    width: 10rem;
+    margin-bottom: 7rem;
+  }
+  .climate-note-box {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 3rem 4rem;
+  }
+  .climate-note-box h1 {
+    font-size: 2.5rem;
+    text-align: start;
+    margin-bottom: 2rem;
+  }
+  .climate-note-box p {
+    text-align: start;
+    text-decoration: underline;
+  }
+  .issue-title {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    padding: 0.5rem 2.5rem;
+    width: 10rem;
+    position: relative;
+    left: 2.5rem;
+    top: 1rem;
+  }
+  /* action-section */
+  .action-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: #c0e7c7;
+  }
+  .action-note-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .action-note-container h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .action-title {
+    color: white;
+    background-color: rgb(53, 68, 99);
+    padding: 0.6rem 2rem;
+    position: relative;
+    bottom: 5.2rem;
+  }
+  .what-we-do-container {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 2rem;
+  }
+  .do-task {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 0.5rem 0.8rem;
+    width: 10rem;
+  }
+  .do-msg {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: start;
+  }
+  .article-box {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5rem;
+    margin-top: 4rem;
+  }
+  .image-box1 {
+    background-image: url(/images/what-to-image1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    width: 11.1rem;
+  }
+  .image-box2 {
+    background-image: url(/images/what-to-do2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    width: 11.1rem;
+  }
+  .image-box3 {
+    background-image: url(/images/what-to-image3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    width: 11.1rem;
+  }
+  .article {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 2rem;
+    margin-top: 4rem;
+    padding: 0rem 2rem 1rem 2rem;
+    align-items: start;
+  }
+  .article h1 {
+    font-size: 2rem;
+    text-align: start;
+    padding: 1rem;
+  }
+  .article p {
+    font-size: 1rem;
+    text-align: start;
+    line-height: 1.5rem;
+  }
+  .img {
+    position: relative;
+    bottom: 2.5rem;
+    grid-column: 1; /*  Doubt */
+    grid-row: 1 / 3; /*  Doubt */
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+  }
+  .btn {
+    background-color: #c0e7c7;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    width: 9rem;
+    padding: 1rem;
+  }
+  /* did-yoy-know-section */
+  .did-you-know-container {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/did-you-know-tab.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .climate-hunger-title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-   gap: 1rem;
+    gap: 0.5rem;
+    margin: 2rem 8rem 2rem 0rem;
+    height: auto;
+    width: 10rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .facts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .facts-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2rem;
+  }
+  .fact-msg {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .fact-msg h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .you-know-heading {
+    background-color: rgb(53, 68, 99);
+    color-scheme: white;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    top: 1rem;
   }
 
-  .navbar-heading ul {
+  /* stories-section */
+
+  .stories-section {
+    padding: 4rem;
     display: flex;
-    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .story-box1 {
+    background-color: rgb(53, 68, 99);
+    height: 27rem;
+    width: 35rem;
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/lady-baby.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    right: 2.8rem;
+  }
+  .story-title {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    position: relative;
+    bottom: 1rem;
+    width: 8rem;
+    left: 4rem;
+    text-align: center;
+  }
+  .story-box2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .story-button {
+    background-color: #c0e7c7;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 10rem;
+    outline: none;
+    margin-left: 1.3rem;
+  }
+  .story-para {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    text-align: left;
+    padding: 4rem;
+    width: 35rem;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 5rem;
+    left: 2rem;
+  }
+  .story-para > p {
+    padding: 2rem;
+    text-align: start;
+  }
+  /* event-section */
+  .event-container {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    gap: 1rem;
+  }
+  .event-section1 {
+    text-align: start;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 2.5rem;
+  }
+
+  .event-section2 {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
 
-  .navbar-heading a {
-    text-decoration: none;
-    color: black;
-    
+  /* Event rows: Flex row layout with equal halves */
+  .event-image1 {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .event-image2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
   }
 
-  .btn button {
-    border-radius: 2rem;
+  /* Background colors for distinction */
+
+  /* Image boxes: now take equal width */
+  .event-image-box1,
+  .event-image-box2 {
+    flex: 1;
+    height: 27rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  .event-image-box1 {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/what-to-image1.png);
+  }
+
+  .event-image-box2 {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/meeting-home.png);
+  }
+
+  /* Text sections also take equal space */
+  .planting-section,
+  .news-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  /* Event labels */
+  .event-bar1,
+  .event-bar2 {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    text-align: center;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: fit-content;
+  }
+
+  /* Content */
+  .event-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    color: white;
+  }
+
+  .event-para h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(53, 68, 99);
+    line-height: 2.8rem;
+    color: white;
+  }
+
+  .event-para p {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6rem;
+    color: white;
+  }
+
+  /* Buttons */
+  .event-button1.btn,
+  .event-button2.btn {
     background-color: #c0e7c7;
     color: rgb(53, 68, 99);
     border: none;
-
-    font-weight: 600;
-    height: 3rem;
-    width: 8.5rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: fit-content;
   }
 
+  .event-button1.btn:hover,
+  .event-button2.btn:hover {
+    background-color: #2c3a54;
+  }
+
+  /* Subscribe-section */
+  .subscribe-options {
+    background-color: #c0e7c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-size: 1.62rem;
+    font-weight: 700;
+  }
+  .subscribe-options p {
+    margin: 0rem 9rem 1.5rem 0rem;
+  }
+  .subscribe-input-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .subscribe-input-button button {
+    background-color: rgb(53, 68, 99);
+    color: #c0e7c7;
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+  }
+  .subscribe-input-button input {
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 1rem 8rem;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+
+  /* About Page */
   .issue-section {
     background-color: rgb(53, 68, 99);
     background-size: cover;
@@ -82,7 +526,7 @@ body {
 
   .issue-box {
     background-color: white;
-    padding:  1rem 3rem;
+    padding: 1rem 3rem;
     height: 19rem;
   }
   .issue-box p {
@@ -90,7 +534,6 @@ body {
     font-weight: 600;
     background-color: white;
     text-align: left;
-    
   }
   .issue-button {
     background-color: rgb(53, 68, 99);
@@ -101,7 +544,7 @@ body {
     bottom: 2.1rem;
     left: 1.6rem;
   }
-/* mission-section */
+  /* mission-section */
   .mission {
     background-color: rgb(53, 68, 99);
     height: auto;
@@ -109,7 +552,7 @@ body {
     padding: 4rem;
     display: flex;
     flex-direction: column;
-  align-items: flex-start;
+    align-items: flex-start;
   }
   .values {
     background-color: white;
@@ -157,15 +600,14 @@ body {
   .team-msg-box {
     display: flex;
     flex-direction: row;
- text-align: left;
+    text-align: left;
     font-size: 1.3rem;
     font: bold;
     gap: 2rem;
-
   }
   .team-msg-box p {
     font-size: 1.2rem;
-text-align: left;
+    text-align: left;
   }
   .picture-list {
     display: grid;
@@ -184,7 +626,7 @@ text-align: left;
     text-align: center;
     padding: 1rem;
     line-height: 1.4rem;
-    position:relative ;
+    position: relative;
     left: 2rem;
     bottom: 2rem;
     background-color: rgb(53, 68, 99);
@@ -214,9 +656,9 @@ text-align: left;
     margin: 2rem 0rem;
     text-align: left;
   }
-  .impact-list{
+  .impact-list {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .impact-list div {
     text-align: center;
@@ -244,7 +686,6 @@ text-align: left;
     text-align: left;
     text-transform: uppercase;
     line-height: 3rem;
-    
   }
   .action-box1 {
     background-image: url(../images/poverty@2x.png);
@@ -320,8 +761,7 @@ text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding:  3rem 4rem;
-
+    padding: 3rem 4rem;
   }
   .subscribe-section p {
     font-size: 1.4rem;
@@ -348,33 +788,195 @@ text-align: left;
   .text {
     background-color: white;
     border: none;
-    padding:  1rem;
+    padding: 1rem;
     border-radius: 1.5rem;
     width: 25rem;
   }
-  .Footer {
-    height: auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .footer1 {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
 
-    gap: 1.5rem;
+  /* Donation-Page */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
   }
-  .footer1 h2 {
-    font-size: 1.3rem;
+  header a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    width: 11rem;
+    color: rgb(15, 15, 58);
+    display: flex;
   }
-  .footer1 ul li {
+
+  .form-section {
+    background-color: rgb(15, 15, 58);
+    background-image: url(../images/donation-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem;
+    height: auto;
+    width: auto;
+    color: azure;
+  }
+  .form-container {
+    background-color: rgb(15, 15, 58);
+    padding: 4rem 2rem;
+  }
+
+  .donation-heading {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1rem 6rem;
+  }
+  legend {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.68rem;
+  }
+  fieldset {
+    padding: 2rem;
+    box-sizing: border-box;
+    border: none;
+  }
+  .full-name input {
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    outline: none;
+  }
+  label {
+    font-size: medium;
+  }
+
+  .full-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .address-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .form-info {
+    margin: 1rem 0rem;
+  }
+  .form-info input {
+    width: 31.5rem;
+    height: 3rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    outline: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+  }
+  .address2 {
+    display: flex;
+  }
+  .address2 input {
+    width: 13.5rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    outline: none;
+  }
+  .expiration-section {
+    display: flex;
+  }
+  .expiration-section input {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    outline: none;
+  }
+  .expiration-month-year {
+    display: flex;
+  }
+  .security-code-container input {
+    width: 11.5rem;
+    height: 2.5rem;
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    outline: none;
+  }
+  .payment-section {
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 2rem;
+  }
+  .confirmation-msg p {
+    font-size: 2.2rem;
+    margin: 2.5rem 2rem;
+    text-align: start;
+    font-weight: 700;
+  }
+  .payment-button button {
+    background-color: rgb(153, 209, 190);
+    border-radius: 2.5rem;
+    padding: 1.5rem 4rem;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .payment-section a {
+    color: rgb(153, 209, 190);
+  }
+  /* Footer */
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 4rem;
+    color: rgb(53, 68, 99);
+  }
+  .footer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+    box-sizing: border-box;
+  }
+  .footer-heading {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 10rem;
+  }
+
+  .footer-section li {
     list-style: none;
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: black;
   }
-  .footer2 {
-    font-size: 4rem;
+  .footer-section li a {
+    color: black;
+  }
+  .footer-section li:first-child {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .footer-note {
+    width: 11rem;
+    align-self: end;
     text-align: end;
-    padding: 2rem 0rem;
+    grid-column: 2/ 3;
   }
 }

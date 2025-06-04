@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Green Trees Initiative</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="/About styles/mobile.css"
+      media="(max-width: 767px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/About styles/tablet.css"
+      media="(min-width: 768px) and (max-width: 1023px)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/About styles/desktop.css"
+      media="(min-width: 1024px)"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
@@ -12,262 +28,308 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="title">The Green <br />Trees initiatives</div>
-        <div class="menu-items">
-          <ul>
-            <li><a href="">About us</a></li>
-            <li><a href="">Our stories</a></li>
-            <li><a href="">News and events</a></li>
+    <!-- Header-section  -->
+    <header class="nav-header">
+      <!-- navbar-section -->
+      <nav class="navbar-section">
+        <div class="navbar-headings">
+          <div class="nav-title">
+            <a href="./index.html">The Green Trees Initiative</a>
+          </div>
+          <ul class="ul-list">
+            <li><a href="./About.html">About us</a></li>
+            <li><a href="/">Our stories</a></li>
+            <li><a href="/">News and events</a></li>
           </ul>
         </div>
-        <div><button>Donate today</button></div>
+        <button onclick="location.href='./donation.html'">Donate today</button>
       </nav>
     </header>
+
+    <!-- main section -->
     <main>
       <!-- Part 1-->
-      <div class="hero-container">
-        <div class="part">
-          <img src="images/ladyWithChild.png" alt="Image is loading" />
+      <section class="issue-container">
+        <div class="issue-msg-box">
+          <!-- heading -->
+          <div class="stop-heading">
+            <h1>#Stop Climate Change</h1>
+          </div>
+          <!-- complete-box -->
+          <div class="climage-change-note">
+            <div class="issue-title">THE ISSUE</div>
+            <div class="climate-note-box">
+              <h1>
+                Climate change poses the biggest threat to women in developing
+                nations.
+              </h1>
+              <p>Read more about this environmental and social cause</p>
+            </div>
+          </div>
         </div>
-        <section class="part1">
-          <div class="overlay-box">
-            <div class="overlay-box1">THE ISSUE</div>
-            <h1>
-              Climate change <br />poses the biggest <br />
-              threat to women <br />
-              in developing <br />
-              nations.
-            </h1>
-            <p>Read more about this environmental and social cause</p>
-          </div>
-          <div class="overlay-box2">
-            <h1>
-              #Stop <br />
-              Climate <br />
-              Change
-            </h1>
-          </div>
-        </section>
-        <!--Part 2-->
-      </div>
+      </section>
+
+      <!--Part 2-->
+
       <div class="action-section">
         <div class="action-title">TAKE ACTION</div>
-        <div>
-          <h1>Learn</h1>
-          <br />
-          <p>Get the facts about this issue and how we are helping.</p>
-        </div>
-        <div>
-          <h1>Volunteer</h1>
-          <br />
-          <p>Find out about upcoming events that need your help.</p>
-        </div>
+        <div class="action-note-container">
+          <div>
+            <h3>Learn</h3>
+            <p>Get the facts about this issue and how we are helping.</p>
+          </div>
+          <div>
+            <h3>Volunteer</h3>
+            <p>Find out about upcoming events that need your help.</p>
+          </div>
 
-        <div>
-          <h1>Share</h1>
-          <br />
-          <p>Let your social media networks know about this important cause.</p>
-        </div>
-        <div>
-          <h1>Donate</h1>
-          <br />
-          <p>Help us raise money to make a big difference with this issue</p>
+          <div>
+            <h3>Share</h3>
+            <p>
+              Let your social media networks know about this important cause.
+            </p>
+          </div>
+
+          <div>
+            <h3>Donate</h3>
+            <p>Help us raise money to make a big difference with this issue</p>
+          </div>
         </div>
       </div>
+
       <!--Part 3-->
-      <div class="what-we-do">
-        <div class="task">WHAT WE DO</div>
-        <div class="quote">
+      <div class="what-we-do-container">
+        <div class="do-task">WHAT WE DO</div>
+        <div class="do-msg">
           Our mission is to create sustainable work for women in developing
           nations while helping to slow climate change.
         </div>
+
+        <!-- Articles -->
         <div class="article-box">
-          <div class="article1">
+          <!-- article-box1 -->
+          <div class="article">
+            <div class="image-box1 img"></div>
             <h1>Tree Planting Initiatives</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
               felis, auctor vitae vestibulum vel, consequat eu dolor. Nam
               pellentesque euismod laoreet.
             </p>
-            <button>Read More</button>
-            <img src="images/tree-planting.png" alt="" />
+            <button class="btn">Read More</button>
           </div>
-          <div class="article2">
+
+          <!-- article-box2 -->
+          <div class="article">
+            <div class="image-box2 img"></div>
             <h1>Education and Training</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
               felis, auctor vitae vestibulum vel, consequat eu dolor. Nam
               pellentesque euismod laoreet.
             </p>
-            <img src="images/education-training.png" alt="" />
-            <button>Read More</button>
+            <button class="btn">Read More</button>
           </div>
-          <div class="article3">
+
+          <!-- article-box3 -->
+          <div class="article">
+            <div class="image-box3 img"></div>
             <h1>Advocacy and Campaigning</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
               felis, auctor vitae vestibulum vel, consequat eu dolor. Nam
               pellentesque euismod laoreet.
             </p>
-            <img src="images/advocacy@2x.png" alt="" />
-            <button>Read More</button>
+            <button class="btn">Read More</button>
           </div>
         </div>
       </div>
+
       <!-- Part 4 -->
-      <div class="part4">
-        <img
-          width="100%"
-          height="1500px"
-          src="images/did-you-know-background.png"
-          alt="Image is loading"
-        />
-        <div class="did-you-know">
-          <div class="item1">
-            <h1>3 out of 4</h1>
-            <p>People living in poverty depend on agriculture for survival.</p>
-            <div class="image1">
-              <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
-              <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
-            </div>
-          </div>
-          <div class="info-bar">DID YOU KNOW?</div>
-          <div class="item2">
-            <h1>100 million +</h1>
-            <p>People living in poverty due to climate change by 2030</p>
-            <div class="image1">
-              <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
-              <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
-            </div>
-          </div>
-          <div class="item3">
-            <h1>30%</h1>
-            <p>How high crop yield losses could go by the year 2080</p>
-            <div class="image1">
-              <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
-              <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
-            </div>
-          </div>
-          <div class="item4">
-            <h1>200 million +</h1>
-            <p>Refugees dealing with food shortages by the year 2050</p>
-            <div class="image1">
-              <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
-              <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
-            </div>
-          </div>
+      <div class="did-you-know-container">
+        <!-- fact1 -->
+        <div class="climate-hunger-title">
+          <h1>CLIMATE CHANGE IS A HUNGER ISSUE</h1>
+          <button class="btn">Take action</button>
         </div>
-        <div class="climate-text">
-          CLIMATE <br />
-          CHANGE <br />
-          IS A <br />
-          HUNGER <br />
-          ISSUE <br />
-          <button>Take Action</button>
+
+        <!-- fact2 -->
+        <div class="facts-list">
+          <div class="you-know-heading">Did you know?</div>
+          <div class="facts-container">
+            <div class="fact-msg">
+              <div>
+                <h3>3 out of 4</h3>
+                <p>
+                  People living in poverty depend on agriculture for survival
+                </p>
+              </div>
+              <div class="image1">
+                <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
+                <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
+              </div>
+            </div>
+
+            <div class="fact-msg">
+              <div>
+                <h3>100 million +</h3>
+                <p>How high crop yield losses could go by the year 2080</p>
+              </div>
+              <div class="image1">
+                <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
+                <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
+              </div>
+            </div>
+
+            <div class="fact-msg">
+              <div>
+                <h3>30%</h3>
+                <p>
+                  People living in poverty depend on agriculture for survival
+                </p>
+              </div>
+              <div class="image1">
+                <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
+                <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
+              </div>
+            </div>
+
+            <div class="fact-msg">
+              <div>
+                <h3>200 million +</h3>
+                <p>Refugees dealing with food shortages by the year 2050</p>
+              </div>
+              <div class="image1">
+                <img src="images/iconmonstr-twitter-1@2x.png" alt="" /> <br />
+                <img src="images/iconmonstr-facebook-1@2x.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Part 5 -->
-      <div class="stories">
-        <img
-          src="images/lady-baby.png"
-          alt="Image is loading"
-          width="595px"
-          height="580vh"
-        />
-        <div class="story-box1">STORIES</div>
+
+      <!-- Part 5-story-section -->
+      <div class="stories-section">
+        <!-- box1 -->
+        <div class="story-box1">
+          <div class="story-title">STORIES</div>
+        </div>
+
+        <!-- box2 -->
         <div class="story-box2">
-          <h1>
-            “I am a person who was helped by this organization. Before they gave
-            me assistance, I was really struggling with this issue, but."
-          </h1>
-          <p>BALKI, FARMER AND MOTHER IN NIGER</p>
+          <div class="story-para">
+            <h1>
+              “I am a person who was helped by this organization. Before they
+              gave me assistance, I was really struggling with this issue, but."
+            </h1>
+            <p>BALKI, FARMER AND MOTHER IN NIGER</p>
+          </div>
+          <button class="story-button">Read More</button>
         </div>
-        <button class="story-button">Read More</button>
       </div>
-      <!-- Part 6 -->
-      <div class="event-box">
-        <div class="event-text">
-          LET’S TAKE AN ACTION NOW <br />
-          TO SAVE THE FUTURE.
+
+      <!-- Part 6 Event  -->
+      <div class="event-container">
+        <!-- event-section1 -->
+        <div class="event-section1">
+          LET’S TAKE AN ACTION NOW TO SAVE THE FUTURE.
         </div>
-        <div class="event-image1">
-          <img src="images/tree-planting.png" alt="" />
+
+        <!-- event-section2 -->
+        <div class="event-section2">
+          <!-- event-image1 -->
+
+          <div class="event-image1">
+            <div class="event-image-box1"></div>
+            <div class="planting-section">
+              <div class="event-bar1">EVENT</div>
+              <div class="event-para">
+                <h1>Earth Day 2018 community tree planting event</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam mi felis, auctor vitae vestibulum vel, consequat eu
+                  dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl
+                  porttitor nisl laoreet semper nec iaculis nibh. Curabitur in
+                  tortor lorem.
+                </p>
+                <button class="event-button1 btn">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- event-image2 -->
+          <div class="event-image2">
+            <div class="event-image-box2"></div>
+            <div class="news-section">
+              <div class="event-bar2">LATEST NEWS</div>
+              <div class="event-para">
+                <h1>Updates from the fall quaterly meeting</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam mi felis, auctor vitae vestibulum vel, consequat eu
+                  dolor. Nam pellentesque euismod laoreet. Aliquam sed nisl
+                  porttitor nisl laoreet semper nec iaculis nibh. Curabitur in
+                  tortor lorem.
+                </p>
+                <button class="event-button2 btn">Read More</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="event-bar1">EVENT</div>
-        <div class="event1">
-          <h1>Earth Day 2018 community tree planting event</h1>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
-            felis, auctor vitae vestibulum vel, consequat eu dolor. Nam
-            pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl
-            laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
-          </p>
-        </div>
-        <button class="event-button1">Read More</button>
-        <div class="event-image2">
-          <img src="images/meeting (1).png" alt="" />
-        </div>
-        <div class="event-bar2">LATEST NEWS</div>
-        <div class="event2">
-          <h1>Updates from the fall quarterly meeting</h1>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi
-            felis, auctor vitae vestibulum vel, consequat eu dolor. Nam
-            pellentesque euismod laoreet. Aliquam sed nisl porttitor nisl
-            laoreet semper nec iaculis nibh. Curabitur in tortor lorem.
-          </p>
-        </div>
-        <button class="event-button2">Read More</button>
       </div>
       <!-- Part 7 -->
-      <div class="subscribe-section">
+      <div class="subscribe-options">
         <p>
-          Subscribe to our monthly newsletter <br />and stay up to date with all
-          news and <br />
-          events.
+          Subscribe to our monthly newsletter and stay up to date with all news
+          and events.
         </p>
-        <input class="subscribe-text" placeholder="Enter your email address" />
-        <button>Subscribe</button>
+        <div class="subscribe-input-button">
+          <input
+            class="subscribe-text"
+            placeholder="Enter your email address"
+          />
+          <button>Subscribe</button>
+        </div>
       </div>
     </main>
     <!-- Part 8 -->
-    <footer class="footer-section">
-      <div class="footer-text">
-        The Green <br />
-        Trees Initiative
-      </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <!-- footer-heading-section -->
+          <div class="footer-heading">
+            <h2>The Green Trees Initiative</h2>
+          </div>
 
-      <ul>
-        <li class="heading">CONTACT US</li>
-        <li>
-          123 Anywhere St. Cityname, <br />
-          NY 11206 (123) 456-7890 <br />
-          contact@npo.org
-        </li>
-      </ul>
-      <ul>
-        <li class="heading">FOLLOW US</li>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
-        <li>Mediums</li>
-      </ul>
-      <ul>
-        <li class="heading">LEARN MORE</li>
-        <li>The issue</li>
-        <li>How we help</li>
-        <li>Get involved</li>
-        <li>Latest news</li>
-      </ul>
+          <!-- list-1 -->
+          <ul>
+            <li>CONTACT US</li>
+            <li class="contact">
+              123 Anywhere St. Cityname, NY 11206 (123) 456-7890 contact@npo.org
+            </li>
+          </ul>
 
-      <div class="footer-tagline">
-        #STOP <br />
-        CLIMATE <br />
-        CHANGE
+          <!-- list-2 -->
+          <ul>
+            <li>FOLLOW US</li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Mediums</a></li>
+          </ul>
+
+          <!-- list-3 -->
+          <ul>
+            <li>LEARN MORE</li>
+            <li><a href="">The issue</a></li>
+            <li><a href="">How we help</a></li>
+            <li><a href="">Get involoved</a></li>
+            <li><a href="">Latest news</a></li>
+          </ul>
+
+          <!-- footer-note -->
+          <div class="footer-note"><h1>#STOP CLIMATE CHANGE</h1></div>
+        </div>
       </div>
     </footer>
   </body>

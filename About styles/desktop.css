@@ -1,16 +1,526 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-/* About Page */
 @media (min-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Home-Page */
+  .nav-header {
+    padding: 1rem 8rem;
+    box-sizing: border-box;
+  }
+  .navbar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .navbar-headings {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  .ul-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 2rem 0rem 0rem 5rem;
+  }
+
+  .navbar-section ul a {
+    color: rgb(53, 68, 99);
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+   .navbar-section ul a:hover {
+    color: rgb(148, 146, 146);
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-title a {
+    font-size: 1.38rem;
+    font-weight: 0;
+    width: 9rem;
+    color: rgb(53, 68, 99);
+  }
+  .navbar-section button {
+    background-color: #c0e7c7;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .navbar-section button:hover {
+    background-color: rgb(53, 68, 99);
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #c0e7c7;
+  }
+  /* Home-Page */
+
+  /* issue-section */
+  .issue-container {
+    background-color: rgb(53, 68, 99);
+    height: auto;
+    width: auto;
+    background-image: url(/images/annie-spratt-tablet-unsplash@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .issue-msg-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 8rem;
+    color: white;
+  }
+  .stop-heading {
+    width: 12.25rem;
+    font-size: 3rem;
+    line-height: 4.75rem;
+    margin: 2rem 7.5rem 0rem 0rem;
+  }
+
+  .climate-note-box {
+    align-items: start;
+    order: 0;
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 3rem 4rem 4rem 4.68rem;
+    width: 33rem;
+  }
+  .climate-note-box h1 {
+    font-size: 3rem;
+    text-align: start;
+    margin-bottom: 2rem;
+  }
+  .climate-note-box p {
+    text-align: start;
+    text-decoration: underline;
+  }
+  .issue-title {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    padding: 0.5rem 2.5rem;
+    width: 10rem;
+    position: relative;
+    left: 2.5rem;
+    top: 1rem;
+  }
+  /* action-section */
+  .action-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9.5rem;
+    background-color: #c0e7c7;
+  }
+  .action-note-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3.5rem;
+  }
+  .action-note-container h3 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .action-note-container p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .action-title {
+    color: white;
+    background-color: rgb(53, 68, 99);
+    padding: 0.6rem 2rem;
+    position: relative;
+    bottom: 3rem;
+  }
+  .what-we-do-container {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 9.5rem;
+    gap: 2rem;
+  }
+  .do-task {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 0.5rem 0.8rem;
+    width: 10rem;
+  }
+  .do-msg {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: start;
+  }
+  .article-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.7rem;
+    margin-top: 2.5rem;
+  }
+  .image-box1 {
+    background-image: url(/images/what-to-image1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    width: 11.5rem;
+  }
+  .image-box2 {
+    background-image: url(/images/what-to-do2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    width: 11.5rem;
+  }
+  .image-box3 {
+    background-image: url(/images/what-to-image3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    width: 11.5rem;
+  }
+  .article {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 0rem 2rem 1rem 2rem;
+    align-items: start;
+  }
+  .article h1 {
+    font-size: 1.8rem;
+    text-align: start;
+    padding-bottom: 1rem;
+  }
+  .article p {
+    font-size: 1rem;
+    text-align: start;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .img {
+    position: relative;
+    bottom: 2rem;
+    width: 100%;
+    height: 12rem;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+  }
+  .btn {
+    background-color: #c0e7c7;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    width: 9rem;
+    padding: 1rem;
+  }
+  /* did-yoy-know-section */
+  .did-you-know-container {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/did-you-know-tab.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9.5rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .climate-hunger-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 8rem 2rem 0rem;
+    height: auto;
+    width: 10rem;
+    font-size: 2rem;
+    text-align: start;
+    gap: 1.5rem;
+  }
+  .facts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .facts-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2rem;
+  }
+  .fact-msg {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 3.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .fact-msg h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .fact-msg p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    width: 23rem;
+  }
+  .you-know-heading {
+    background-color: rgb(53, 68, 99);
+    color-scheme: white;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    top: 1rem;
+  }
+
+  /* stories-section */
+
+  .stories-section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .story-box1 {
+    background-color: rgb(53, 68, 99);
+    height: 27rem;
+    width: 35rem;
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/lady-baby.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    right: 2.8rem;
+  }
+  .story-title {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    position: relative;
+    bottom: 1rem;
+    width: 8rem;
+    left: 4rem;
+    text-align: center;
+  }
+  .story-box2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .story-button {
+    background-color: #c0e7c7;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 10rem;
+    outline: none;
+    margin-left: 1.3rem;
+  }
+ 
+  .story-para {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    text-align: left;
+    padding: 4rem;
+    width: 35rem;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 5rem;
+    left: 2rem;
+  }
+  .story-para > p {
+    padding: 2rem;
+    text-align: start;
+  }
+  /* event-section */
+  .event-container {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9.5rem;
+    gap: 1rem;
+  }
+  .event-section1 {
+    text-align: start;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    padding-bottom: 2.5rem;
+  }
+
+  .event-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Event rows: Flex row layout with equal halves */
+  .event-image1 {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .event-image2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+
+  /* Background colors for distinction */
+
+  /* Image boxes: now take equal width */
+  .event-image-box1,
+  .event-image-box2 {
+    flex: 1;
+    height: 27rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  .event-image-box1 {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/what-to-image1.png);
+  }
+
+  .event-image-box2 {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/meeting-home.png);
+  }
+
+  /* Text sections also take equal space */
+  .planting-section,
+  .news-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  /* Event labels */
+  .event-bar1,
+  .event-bar2 {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    text-align: center;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: fit-content;
+  }
+
+  /* Content */
+  .event-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    color: white;
+  }
+
+  .event-para h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(53, 68, 99);
+    line-height: 2.8rem;
+    color: white;
+  }
+
+  .event-para p {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.6rem;
+    color: white;
+  }
+
+  /* Buttons */
+  .event-button1.btn,
+  .event-button2.btn {
+    background-color: #c0e7c7;
+    color: rgb(53, 68, 99);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .event-button1.btn:hover,
+  .event-button2.btn:hover {
+    background-color: #2c3a54;
+  }
+
+  .subscribe-options {
+    background-color: #c0e7c7;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 2rem 9.5rem;
+    font-size: 1.62rem;
+    font-weight: 700;
+  }
+  .subscribe-options p {
+    margin: 0rem 1rem 1.5rem 0rem;
+  }
+  .subscribe-input-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .subscribe-input-button button {
+    background-color: rgb(53, 68, 99);
+    color: #c0e7c7;
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+  }
+  .subscribe-input-button input {
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 1rem 6rem;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  /* About Page */
+
   .nav-container {
     margin: 0;
     padding: 2rem;
@@ -378,12 +888,10 @@ body {
     justify-content: flex-start;
     padding: 8rem;
     gap: 2rem;
- 
   }
   .footer1 {
     display: flex;
     gap: 4rem;
-
   }
   .footer1 h2 {
     font-size: 1.5rem;
@@ -402,8 +910,202 @@ body {
     text-align: center;
     width: 4rem;
     margin-left: 6rem;
-
   }
   /* Donation Page */
-  
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  header a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    width: 11rem;
+    color: rgb(15, 15, 58);
+    display: flex;
+    font-weight: 700;
+    padding: 1rem 0rem;
+  }
+
+  .form-section {
+    background-color: rgb(15, 15, 58);
+    background-image: url(../images/contact-bg1-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem 10rem;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    color: azure;
+  }
+  .form-container {
+    background-color: rgb(15, 15, 58);
+    padding: 4rem 2rem;
+  }
+
+  .donation-heading {
+    font-size: 3.5rem;
+    text-align: start;
+    padding: 1rem 2.5rem;
+    font-weight: 700;
+  }
+  legend {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.68rem;
+  }
+  fieldset {
+    padding: 2rem;
+    box-sizing: border-box;
+    border: none;
+  }
+  .full-name input {
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    outline: none;
+  }
+  label {
+    font-size: medium;
+  }
+
+  .full-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .address-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .form-info {
+    margin: 1rem 0rem;
+  }
+  .form-info input {
+    width: 26.2rem;
+    height: 3rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    outline: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+  }
+  .address2 {
+    display: flex;
+  }
+  .address2 input {
+    width: 11rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    outline: none;
+  }
+  .expiration-section {
+    display: flex;
+  }
+  .expiration-section input {
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    outline: none;
+  }
+  .expiration-month-year {
+    display: flex;
+  }
+  .security-code-container input {
+    width: 11.5rem;
+    height: 2.5rem;
+    color: rgb(153, 209, 190);
+    font-size: 1.2rem;
+    outline: none;
+  }
+  .payment-section {
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 2rem;
+  }
+  .confirmation-msg p {
+    font-size: 2.2rem;
+    margin: 2.5rem 2rem;
+    text-align: start;
+    font-weight: 700;
+  }
+  .payment-button button {
+    background-color: rgb(153, 209, 190);
+    border-radius: 2.5rem;
+    padding: 1.5rem 4rem;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .payment-section a {
+    color: rgb(153, 209, 190);
+  }
+  /* Footer */
+  .footer-container {
+    padding: 4rem 4rem;
+    color: rgb(53, 68, 99);
+  }
+  .footer-container {
+    padding: 8rem;
+    color: rgb(53, 68, 99);
+  }
+
+  .footer-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    box-sizing: border-box;
+  }
+
+  .footer-heading h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .footer-section ul {
+    padding: 0;
+  }
+
+  .footer-section li {
+    list-style: none;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: black;
+  }
+
+  .footer-section li:first-child {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    border-bottom: 0.15rem solid black;
+  }
+  .footer-section li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .footer-note {
+    text-align: center;
+  }
 }

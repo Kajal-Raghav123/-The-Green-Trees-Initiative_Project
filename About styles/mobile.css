@@ -1,60 +1,462 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-/* About Page */
-/* navbar */
-@media (min-width: 320px) {
-  .navbar {
+@media (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  /* Home-Page */
+
+  .nav-header {
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  .navbar-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 1rem;
+  }
+  .navbar-headings {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    margin: 1.5rem;
   }
-  .navbar-heading {
+  .navbar-section ul li {
+    list-style: none;
+    line-height: 1.8rem;
+  }
+
+  .navbar-section ul a {
+    list-style: none;
+    font-size: 0.89rem;
+  }
+  .nav-title a {
+    font-size: 1.08rem;
+    padding: 1rem 1rem 1rem 2.8rem;
+    font-weight: 600;
+    color: rgb(53, 68, 99);
+  }
+  .navbar-section button {
+    background-color: #c0e7c7;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .issue-container {
+    background-color: rgb(53, 68, 99);
+    height: auto;
+    width: auto;
+    background-image: url(/images/home-bg1-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .issue-msg-box {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    color: white;
+  }
+  .stop-heading {
+    font-size: 1.78rem;
+    margin-bottom: 7rem;
+  }
+  .climate-note-box {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 3rem 2rem;
+  }
+  .climate-note-box h1 {
+    font-size: 1.45rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .climate-note-box p {
+    text-align: center;
+    text-decoration: underline;
+  }
+  .issue-title {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    padding: 0.5rem 2.5rem;
+    width: 10rem;
+    position: relative;
+    left: 2.5rem;
+    top: 1rem;
+  }
+  /* action-section */
+  .action-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #c0e7c7;
+  }
+  .action-note-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-content: center;
     align-items: center;
   }
-  .navbar-heading li {
-    list-style: none;
-    margin: 0.7rem;
+  .action-note-container p {
+    padding-top: 1rem;
   }
-  .navbar-heading h1 {
-    font-size: 1.2rem;
-    font-family: sans-serif;
+  .action-title {
+    color: white;
+    background-color: rgb(53, 68, 99);
+    padding: 0.6rem 2rem;
+    position: relative;
+    bottom: 3rem;
+  }
+  .what-we-do-container {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .do-task {
+    background-color: white;
     color: rgb(53, 68, 99);
+    padding: 0.5rem 0.8rem;
+    width: 10rem;
   }
-  .navbar-heading a {
-    list-style: none;
-    text-decoration: none;
+  .do-msg {
+    font-size: 1.58rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .article-box {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5rem;
+    margin-top: 4rem;
+  }
+  .image-box1 {
+    background-image: url(/images/what-to-image1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    width: 11.1rem;
+  }
+  .image-box2 {
+    background-image: url(/images/what-to-do2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    width: 11.1rem;
+  }
+  .image-box3 {
+    background-image: url(/images/what-to-image3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+    width: 11.1rem;
+  }
+  .article {
+    background-color: white;
     color: rgb(53, 68, 99);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
   }
-  .navbar button {
-    border-radius: 1rem;
-    width: 16rem;
-    height: 2.3rem;
+  .article h1 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .img {
+    position: relative;
+    bottom: 3.5rem;
+  }
+  .btn {
     background-color: #c0e7c7;
-    color: rgb(53, 68, 99);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
     border: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    margin: 0.9rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
   }
-}
-/* section1-issue */
-@media (min-width: 320px) {
+  /* did-yoy-know-section */
+  .did-you-know-container {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/did-you-know-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .climate-hunger-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 2.5rem 2rem 4rem 0rem;
+    font-size: 1.35rem;
+    text-align: start;
+  }
+  .facts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .facts-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2rem;
+  }
+  .fact-msg {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .fact-msg h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .you-know-heading {
+    background-color: rgb(53, 68, 99);
+    color-scheme: white;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    top: 1rem;
+  }
+
+  /* stories-section */
+  .stories-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .story-box1 {
+    background-color: rgb(53, 68, 99);
+    height: 14rem;
+    width: 16rem;
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/lady-baby.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+  }
+  .story-title {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    position: relative;
+    bottom: 1rem;
+    width: 8rem;
+    left: 4rem;
+    text-align: center;
+  }
+  .story-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .story-button {
+    background-color: #c0e7c7;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 10rem;
+    outline: none;
+  }
+  .story-para {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+  }
+  .story-para > p {
+    padding: 1rem;
+  }
+  /* event-section */
+  .event-container {
+    background-color: rgb(53, 68, 99);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .event-section1 {
+    text-align: center;
+    font-size: 2.21rem;
+    padding: 1.5rem;
+    font-weight: 700;
+  }
+  .event-section2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+  .event-image-box1 {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/what-to-image1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 16rem;
+    width: 16rem;
+    margin-bottom: 2rem;
+  }
+  .event-image-box2 {
+    background-color: rgb(53, 68, 99);
+    background-image: url(/images/meeting-home.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 16rem;
+    width: 16rem;
+    margin-bottom: 2rem;
+  }
+  .event-bar1 {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    width: 8rem;
+    padding: 0.6rem 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 3.5rem;
+    text-align: center;
+  }
+  .event-bar2 {
+    background-color: white;
+    color: rgb(53, 68, 99);
+    width: 10rem;
+    padding: 0.68rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 3.5rem;
+    text-align: center;
+  }
+  .event-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .subscribe-options {
+    background-color: #c0e7c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .subscribe-input-button {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .subscribe-input-button button {
+    background-color: rgb(53, 68, 99);
+    color: #c0e7c7;
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 0rem 0.1rem;
+    height: 3rem;
+    margin-top: 2rem;
+  }
+  .subscribe-input-button input {
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 1rem 0.5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+
+  /* About  US Page */
+  /* navbar */
+
+  header {
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  .navbar-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 1rem;
+  }
+  .navbar-headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-section ul li {
+    list-style: none;
+    line-height: 1.8rem;
+  }
+
+  .navbar-section ul a {
+    list-style: none;
+    font-size: 0.89rem;
+  }
+  .nav-title a {
+    font-size: 1.08rem;
+    padding: 1rem 1rem 1rem 2.8rem;
+    font-weight: 600;
+    color: rgb(53, 68, 99);
+  }
+  .navbar-section button {
+    background-color: #c0e7c7;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  /* section1-issue */
+
   .issue-section {
     background-size: cover;
     background-position: center;
@@ -335,42 +737,182 @@ body {
     border-radius: 1.5rem;
     width: 10rem;
   }
-  .Footer {
-    height: auto;
-    padding: 2rem;
-  }
-  .footer1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 
-    gap: 1.5rem;
-  }
-  .footer1 h2 {
-    font-size: 1.3rem;
-  }
-  .footer1 ul li {
-    list-style: none;
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
-  }
-  .footer2 {
-    font-size: 2.5rem;
-    text-align: end;
-    padding: 2rem 0rem;
-  }
   /* Donation-Page */
-  header{
+  header {
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
-   align-items: center;
-  
-  padding: 1rem;
+    align-items: center;
+    padding: 1rem;
   }
-  header a{
- text-decoration: none;
- font-size: 1.8rem;
- width: 11rem;
+  header a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    width: 11rem;
+    color: rgb(15, 15, 58);
+    display: flex;
   }
 
+  .form-section {
+    background-color: rgb(15, 15, 58);
+    background-image: url(../images/donation-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    height: auto;
+    width: auto;
+    color: azure;
+  }
+  .form-container {
+    background-color: rgb(15, 15, 58);
+    padding: 2rem 0rem;
+  }
+
+  .donation-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  legend {
+    font-weight: bold;
+    font-size: 1.37rem;
+    line-height: 1.68rem;
+  }
+  fieldset {
+    padding: 2rem;
+    box-sizing: border-box;
+    border: none;
+  }
+  .full-name input {
+    width: 5rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    outline: none;
+  }
+  label {
+    font-size: small;
+  }
+
+  .full-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .address-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+  .form-info {
+    margin: 1rem 0rem;
+  }
+  .form-info input {
+    width: 11rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    outline: none;
+  }
+  .address2 {
+    display: flex;
+  }
+  .address2 input {
+    width: 4rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+    outline: none;
+  }
+  .expiration-section {
+    display: flex;
+  }
+  .expiration-section input {
+    width: 3rem;
+    height: 2.5rem;
+    background-color: rgb(15, 15, 58);
+    border: none;
+    outline: none;
+
+    border-bottom: 0.1rem solid rgb(153, 209, 190);
+  }
+  .expiration-month-year {
+    display: flex;
+  }
+  .security-code-container input {
+    width: 4rem;
+    height: 2.5rem;
+    outline: none;
+  }
+  .payment-section {
+    display: flex;
+    height: 6rem;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .confirmation-msg p {
+    font-size: 1.4rem;
+    margin: 2.5rem 2rem;
+    text-align: start;
+    font-weight: 700;
+  }
+  .payment-button button {
+    background-color: rgb(153, 209, 190);
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    font-weight: 700;
+  }
+  .payment-section a {
+    color: rgb(153, 209, 190);
+  }
+  /* Footer */
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    color: rgb(53, 68, 99);
+  }
+  .footer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1.78rem;
+    column-gap: 0.5rem;
+    box-sizing: border-box;
+  }
+  .footer-heading {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .footer-section li {
+    list-style: none;
+    font-size: 0.87rem;
+    line-height: 1rem;
+    color: black;
+  }
+  .footer-section li a {
+    color: black;
+  }
+  .footer-section li:first-child {
+    text-decoration: none;
+    font-size: 0.68rem;
+    line-height: 0.81rem;
+    font-weight: 400;
+    margin-bottom: 0.68rem;
+  }
+  .footer-note {
+    width: 11rem;
+    align-self: end;
+    text-align: end;
+    grid-column: 1 / 3;
+    justify-self: end;
+  }
 }
